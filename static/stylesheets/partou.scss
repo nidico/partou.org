@@ -32,6 +32,10 @@ a {
 
 // make body always at least 100% screen height
 body {
+    /* vh is "viewport height in %".
+     * supported in most modern browsers, including IE9+
+     * http://caniuse.com/#search=vh
+     */
     min-height: 100vh;
     @include box-sizing(border-box);
     padding-bottom: 8em;
@@ -48,7 +52,8 @@ footer {
 #main {
     background-color: $main-bg;
     /* direction should be "to bottom left" but my compass
-     * version could not handle that */
+     * version could not handle that
+     */
     @include background-image(linear-gradient(top right, #6180BD, #5478B7, #4E58A7));
     color: $fg2;
     margin: 0 auto 2em;
