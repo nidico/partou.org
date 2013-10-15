@@ -1,4 +1,6 @@
 -   Impressum/Terms and Security/Help
+    -   css should already work for standard content
 -   favicon
--   fix phone
+-   fix phonenumber (it contains a 'u')
 -   font
+-   resize images (not only in css)
