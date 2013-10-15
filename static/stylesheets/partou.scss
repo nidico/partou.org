@@ -1,0 +1,132 @@
+@import "compass";
+
+$main-bg: #5d7dbb;
+$footer-bg: #737374;
+$fg1: white;
+$fg2: #d1d2d4;
+
+
+// general
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-style: italic;
+    font-weight: normal;
+    color: $fg1;
+}
+
+a {
+    color: $fg2;
+    text-decoration: none;
+
+    &:hover {
+        color: $fg2;
+        text-decoration: underline;
+    }
+}
+
+
+// make body always at least 100% screen height
+body {
+    min-height: 100vh;
+    @include box-sizing(border-box);
+    padding-bottom: 8em;
+    padding-top: 2em;
+    position: relative;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#main {
+    background-color: $main-bg;
+    color: $fg2;
+    margin: 0 auto 2em;
+    max-width: 50em;
+    padding: 5em 1em 3em 4em;
+    position: relative;
+}
+
+#main img[rel="logo"] {
+    height: 4em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+#heading {
+    clear: both;
+    margin-bottom: 4em;
+
+    h1, h2 {
+        margin: 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-left: 3em;
+    }
+}
+
+#text p {
+    margin: 0;
+    //font-weight: bold;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 3em;
+    line-height: 1;
+
+    /* compensate uneven #main padding */
+    margin-right: 3em;
+
+    img {
+        width: 100%;
+    }
+
+    > div, > a {
+        margin: 0 3em;
+        display: inline-block;
+        width: 10em;
+    }
+}
+
+footer {
+    background-color: $footer-bg;
+    color: $fg2;
+    text-align: center;
+    padding: 1em 0 6em;
+    font-size: small;
+
+    img {
+        display: inline-block;
+        height: 3em;
+        line-height: 3em;
+        vertical-align: middle;
+        margin-right: 3em;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+
+        li {
+            display: inline-block;
+
+            &:not(:last-child):after {
+                content: " | ";
+            }
+        }
+    }
+}
