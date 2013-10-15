@@ -3,7 +3,7 @@
 $main-bg: #5d7dbb;
 $footer-bg: #737374;
 $fg1: white;
-$fg2: #d1d2d4;
+$fg2: lighten(#d1d2d4, 10%);
 
 
 // general
@@ -47,6 +47,9 @@ footer {
 
 #main {
     background-color: $main-bg;
+    /* direction should be "to bottom left" but my compass
+     * version could not handle that */
+    @include background-image(linear-gradient(top right, #6180BD, #5478B7, #4E58A7));
     color: $fg2;
     margin: 0 auto 2em;
     max-width: 50em;
