@@ -40,9 +40,18 @@
                     <img alt="Telefonhörer" src="static/images/Contact_Logo_phone.png" />
                     <span>Tel.: 023842u29</span>
                 </div>
-                <a href="mailto:contact@partou.de" rel="email">
-                    <img rel="email" alt="Briefumschlag" src="static/images/Contact_Logo_mail.png" />
-                    <span>contact@partou.de</span>
+                <script type="text/javascript">
+                    h='&#112;&#x61;&#114;&#116;&#x6f;&#x75;&#46;&#100;&#x65;';a='&#64;';n='&#x63;&#x6f;&#110;&#116;&#x61;&#x63;&#116;';e=n+a+h;
+                    document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" rel="email">');
+                    document.write('<img rel="email" alt="Briefumschlag" src="static/images/Contact_Logo_mail.png" />');
+                    document.write('<span>'+e+'<\/span><\/a>');
+                </script>
+                <noscript>
+                    <div rel="email">
+                        <img rel="email" alt="Briefumschlag" src="static/images/Contact_Logo_mail.png" />
+                        <span>&#x63;&#x6f;&#110;&#116;&#x61;&#x63;&#116;&#32;&#x61;&#116;&#32;&#112;&#x61;&#114;&#116;&#x6f;&#x75;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</span>
+                    </div>
+                </noscript>
                 </a>
             </div>
         </div>
