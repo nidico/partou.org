@@ -1,0 +1,105 @@
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  line-height: 1.5; }
+
+h1, h2 {
+  font-style: italic;
+  font-weight: normal;
+  color: white; }
+
+a {
+  color: #ebeced;
+  text-decoration: none; }
+  a:hover {
+    color: #ebeced;
+    text-decoration: underline; }
+
+body {
+  /* vh is "viewport height in %".
+   * supported in most modern browsers, including IE9+
+   * http://caniuse.com/#search=vh
+   */
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 8em;
+  padding-top: 2em;
+  position: relative; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+#main {
+  background-color: #5d7dbb;
+  /* direction should be "to bottom left" but my compass
+   * version could not handle that
+   */
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, #6180bd), color-stop(50%, #5478b7), color-stop(100%, #4e58a7));
+  background-image: -webkit-linear-gradient(top right, #6180bd, #5478b7, #4e58a7);
+  background-image: -moz-linear-gradient(top right, #6180bd, #5478b7, #4e58a7);
+  background-image: -o-linear-gradient(top right, #6180bd, #5478b7, #4e58a7);
+  background-image: linear-gradient(top right, #6180bd, #5478b7, #4e58a7);
+  color: #ebeced;
+  margin: 0 auto 2em;
+  max-width: 50em;
+  padding: 5em 1em 3em 4em;
+  position: relative; }
+
+#main img[rel="logo"] {
+  height: 4em;
+  position: absolute;
+  top: 1em;
+  right: 1em; }
+
+#heading {
+  clear: both;
+  margin-bottom: 4em; }
+  #heading h1, #heading h2 {
+    margin: 0; }
+  #heading h1 {
+    font-size: 3em; }
+  #heading h2 {
+    font-size: 1.5em;
+    margin-left: 3em; }
+
+#text p {
+  margin: 0; }
+
+#contact {
+  text-align: center;
+  margin-top: 3em;
+  line-height: 1;
+  /* compensate uneven #main padding */
+  margin-right: 3em; }
+  #contact img {
+    width: 100%; }
+  #contact > div, #contact > a {
+    margin: 0 3em;
+    display: inline-block;
+    width: 10em; }
+
+footer {
+  background-color: #737374;
+  color: #ebeced;
+  text-align: center;
+  padding: 1em 0 6em;
+  font-size: small; }
+  footer img {
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    vertical-align: middle;
+    margin-right: 3em; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li:not(:last-child):after {
+        content: " | "; }
