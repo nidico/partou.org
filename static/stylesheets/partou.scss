@@ -21,11 +21,11 @@ h1, h2 {
 
 a {
     color: $fg2;
-    text-decoration: none;
+    text-decoration: underline;
 
-    &:hover {
+    &:hover, &:focus {
         color: $fg2;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -107,6 +107,14 @@ footer {
         display: inline-block;
         width: 10em;
     }
+
+    a {
+        text-decoration: none;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 footer {
@@ -115,6 +123,14 @@ footer {
     text-align: center;
     padding: 1em 0 6em;
     font-size: small;
+
+    a {
+        text-decoration: none;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
 
     img {
         display: inline-block;
